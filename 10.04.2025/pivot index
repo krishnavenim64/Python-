@@ -1,0 +1,28 @@
+Class ss Solution(object):
+
+    Def pivotIndex(self, nums):
+
+        “””
+
+        :type nums: List[int]
+
+        :rtype: int
+
+        “””
+
+        Sum_l = 0
+
+        Sum_r = sum(nums)
+
+        For i in range(len(nums)):
+
+            Sum_r -= nums[i]
+
+            If sum_r == sum_l:
+
+                Return i
+
+            Sum_l += nums[i]
+
+        Return -1
+
