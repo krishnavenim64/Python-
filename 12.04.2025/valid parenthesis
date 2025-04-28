@@ -1,0 +1,38 @@
+Class Solution:
+
+    Def isValid(self, s):
+
+        Brackets = []
+
+        Pairs = {
+
+            ‘)’: ‘(‘,
+
+            ‘}’: ‘{‘,
+
+            ‘]’: ‘[‘
+
+        }
+
+        
+
+        For char in s:
+
+            If char not in pairs:
+
+                Brackets.append(char)
+
+            Elif not brackets or brackets[-1] != pairs[char]:
+
+                Return False
+
+            Else:
+
+                Brackets.pop()
+
+                
+
+        Return len(brackets) == 0
+
+            
+
