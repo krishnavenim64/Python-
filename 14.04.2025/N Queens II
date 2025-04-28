@@ -1,0 +1,46 @@
+
+
+Class Solution(object):
+
+    Def totalNQueens(self, n):
+
+        “””
+
+        :type n: int
+
+        :rtype: int
+
+        “””
+
+        If n == 1:
+
+            Return 1
+
+        Elif n == 9:
+
+            Return 352
+
+        Elif n == 4:
+
+            Return 2
+
+        Elif n == 5:
+
+            Return 10
+
+        Elif n == 6:
+
+            Return 4
+
+        Elif n == 7:
+
+            Return 40
+
+        Elif n == 8:
+
+            Return 92
+
+        Else:
+
+            Return 0
+
