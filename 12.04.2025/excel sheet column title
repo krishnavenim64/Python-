@@ -1,0 +1,26 @@
+Class Solution(object):
+
+    Def convertToTitle(self, columnNumber):
+
+        Ans = []
+
+        
+
+        While columnNumber > 0:
+
+            If columnNumber % 26 == 0:
+
+                Ans.append(chr(ord(‘A’) + 25))
+
+                columnNumber -= 1
+
+            else:
+
+                ans.append(chr(ord(‘A’) + (columnNumber % 26) – 1))
+
+            columnNumber //= 26
+
+        
+
+        return ‘’.join(ans[::-1])
+
