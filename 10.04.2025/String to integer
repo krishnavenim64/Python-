@@ -1,0 +1,54 @@
+Class Solution(object):
+
+    Def myAtoi(self, s):
+
+        “””
+
+        :type s: str
+
+        :rtype: int
+
+        “””
+
+        I = 0
+
+        N = len(s)
+
+        
+
+        While i < n and s[i] == ‘ ‘:
+
+            I += 1
+
+        
+
+        Sign = 1
+
+        If i < n and (s[i] == ‘-‘ or s[i] == ‘+’):
+
+            Sign = -1 if s[i] == ‘-‘ else 1
+
+            I += 1
+
+        
+
+        Result = 0
+
+        While i < n and s[i].isdigit():
+
+            Result = result * 10 + int(s[i])
+
+            If result * sign > 2**31 – 1:
+
+                Return 2**31 – 1
+
+            If result * sign < -2**31:
+
+                Return -2**31
+
+            I += 1
+
+        
+
+        Return result * sign
+
