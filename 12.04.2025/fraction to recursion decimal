@@ -1,0 +1,90 @@
+Class Solution(object):
+
+    Def fractionToDecimal(self, n, d):
+
+        “””
+
+        :type numerator: int
+
+        :type denominator: int
+
+        :rtype: str
+
+        “””
+
+        If n%d == 0:
+
+            Return str(n/d)
+
+        Is_neg = ‘’
+
+        If n * d < 0 :
+
+            Is_neg = “-“
+
+            N  = abs(n) 
+
+            D = abs(d)
+
+            
+
+        Res = “”
+
+        Cache = collections.defaultdict(int)
+
+        Rem = n % d 
+
+        Res += str(n/d) + “.”
+
+        
+
+        While  rem != 0 and rem not in cache :
+
+            Cache[rem] = len(res)
+
+            Rem *= 10
+
+            Res += str(rem/d)
+
+            Rem = rem % d
+
+         
+
+        If rem != 0:
+
+            Res = res[:cache[rem]] + “(“ + res[cache[rem]:] + “)”
+
+        Return is_neg + res
+
+
+
+4)excel sheet column title
+
+
+
+Class Solution(object):
+
+    Def convertToTitle(self, columnNumber):
+
+        Ans = []
+
+        
+
+        While columnNumber > 0:
+
+            If columnNumber % 26 == 0:
+
+                Ans.append(chr(ord(‘A’) + 25))
+
+                columnNumber -= 1
+
+            else:
+
+                ans.append(chr(ord(‘A’) + (columnNumber % 26) – 1))
+
+            columnNumber //= 26
+
+        
+
+        return ‘’.join(ans[::-1])
+
