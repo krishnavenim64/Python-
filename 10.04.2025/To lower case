@@ -1,0 +1,22 @@
+Class Solution(object):
+
+    Def toLowerCase(self, s):
+
+        “””
+
+        :type s: str
+
+        :rtype: str
+
+        “””
+
+        Ans = ‘’
+
+        For i in s:
+
+            If i >= ‘A’ and i<=’Z’:ans += chr(ord(i)+32)
+
+            Else: ans += i
+
+        Return ans
+
