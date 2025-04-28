@@ -1,0 +1,15 @@
+Class Solution:
+
+    Def twoSum(self, nums, target):
+
+        Num_map = {}
+
+        For i, num in enumerate(nums):
+
+            Complement = target – num
+
+            If complement in num_map:
+
+                Return [num_map[complement], i]
+
+            Num_map[num] = i
